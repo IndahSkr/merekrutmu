@@ -57,7 +57,7 @@
     </li>
     <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
         </svg> Buttons</a>
       <ul class="nav-group-items">
         <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
@@ -65,14 +65,19 @@
         <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
       </ul>
     </li>
-    <li class="nav-item"><a class="nav-link" href="charts.html">
+    <li class="nav-item">
+      <a class="nav-link" href="charts.html">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
-        </svg> Charts</a></li>
-    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+        </svg> Charts
+      </a>
+    </li>
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
-        </svg> Forms</a>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
+        </svg> Forms
+      </a>
       <ul class="nav-group-items">
         <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
         <li class="nav-item"><a class="nav-link" href="forms/select.html"> Select</a></li>
@@ -84,20 +89,24 @@
         <li class="nav-item"><a class="nav-link" href="forms/validation.html"> Validation</a></li>
       </ul>
     </li>
-    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
-        </svg> Icons</a>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+        </svg> Icons
+      </a>
       <ul class="nav-group-items">
         <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
         <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
         <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
       </ul>
     </li>
-    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
-        </svg> Notifications</a>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+        </svg> Notifications
+      </a>
       <ul class="nav-group-items">
         <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
         <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
@@ -105,43 +114,63 @@
         <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
       </ul>
     </li>
-    <li class="nav-item"><a class="nav-link" href="widgets.html">
+    <li class="nav-item">
+      <a class="nav-link" href="widgets.html">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
-        </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
+        </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span>
+      </a>
+    </li>
     <li class="nav-divider"></li>
     <li class="nav-title">Extras</li>
-    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
-        </svg> Pages</a>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+        </svg> Pages
+      </a>
       <ul class="nav-group-items">
-        <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
-            </svg> Login</a></li>
-        <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
+              <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+            </svg> Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
-            </svg> Register</a></li>
-        <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
+              <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+            </svg> Register
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="404.html" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
-            </svg> Error 404</a></li>
-        <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
+              <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+            </svg> Error 404
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="500.html" target="_top">
             <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
-            </svg> Error 500</a></li>
+              <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+            </svg> Error 500
+          </a>
+        </li>
       </ul>
     </li>
-    <li class="nav-item mt-auto"><a class="nav-link" href="https://coreui.io/docs/templates/installation/" target="_blank">
+    <li class="nav-item mt-auto">
+      <a class="nav-link" href="https://coreui.io/docs/templates/installation/" target="_blank">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
-        </svg> Docs</a>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-description"></use>
+        </svg> Docs
+      </a>
     </li>
-    <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+    <li class="nav-item">
+      <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
         <svg class="nav-icon">
-          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
         </svg> Try CoreUI
         <div class="fw-semibold">PRO</div>
       </a>
