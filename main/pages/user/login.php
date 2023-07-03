@@ -60,14 +60,14 @@
               <div class="card-body">
                 <h1>Login</h1>
                 <p class="text-medium-emphasis">Silahkan Masuk ke dalam akun</p>
-                <form action="../../process/login.php" method="post">
+                <form action="../../process/login.php?kata=login" method="post">
                   <div class="input-group mb-3">
                     <span class="input-group-text">
                       <svg class="icon">
                         <use xlink:href="../../lib/vendors/@coreui/icons/svg/free.svg#cil-user"></use>
                       </svg>
                     </span>
-                    <input class="form-control" name="uname" id="uname" type="text" placeholder="Username" required>
+                    <input class="form-control" name="uname" id="uname" type="text" placeholder="Enter Username" required>
                   </div>
                   <div class="input-group mb-4">
                     <span class="input-group-text">
@@ -75,7 +75,7 @@
                         <use xlink:href="../../lib/vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                       </svg>
                     </span>
-                    <input class="form-control" name="password" id="password" type="password" placeholder="Password" required>
+                    <input class="form-control" name="password" id="password" type="password" placeholder="Enter Password" required>
                   </div>
                   <div class="row">
                     <div class="col-6">
@@ -93,7 +93,7 @@
                 <div>
                   <h2>Sign up</h2>
                   <p>Belum Punya Akun?</p>
-                  <button class="btn btn-lg btn-outline-light mt-3" type="button">Registrasi Sekarang</button>
+                  <a href="./registrasi.php" class="btn btn-lg btn-outline-light mt-3" type="button">Registrasi Sekarang</a>
                 </div>
               </div>
             </div>
