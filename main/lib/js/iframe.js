@@ -1,3 +1,4 @@
+
 function theContent(page) {
   // Swal.fire({
   //   title: page,
@@ -6,5 +7,6 @@ function theContent(page) {
   //   // timer: 1500,
   //   // timerProgressBar: true,
   // });
-  $("#content-index").load("./contents/" + page + ".php");
+  $("#content-index").load("./pages/contents/" + page + ".php");
+  // window.onload("./pages/content/" + page + ".php")
 }
