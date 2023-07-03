@@ -2,25 +2,25 @@
 session_start();
 if (!isset($_SESSION['upkey'])) {
   header("location:./pages/user/login.php");
-}else{
+} else {
   $upkey = $_SESSION['upkey'];
   $username = $_SESSION['uname'];
   $iduser = $_SESSION['iduser'];
   $idlevel = $_SESSION['idlevel'];
 ?>
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <!-- <base href="./"> -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <!-- <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <head>
+    <!-- <base href="./"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
   <meta name="author" content="Łukasz Holeczek"> -->
-  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-  <title>Merekrutmu</title>
-  <!-- <link rel="apple-touch-icon" sizes="57x57" href="lib/assets/favicon/apple-icon-57x57.png">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Merekrutmu</title>
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="lib/assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="lib/assets/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="lib/assets/favicon/apple-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="lib/assets/favicon/apple-icon-76x76.png">
@@ -34,20 +34,20 @@ if (!isset($_SESSION['upkey'])) {
   <link rel="icon" type="image/png" sizes="96x96" href="lib/assets/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="lib/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="lib/assets/favicon/manifest.json"> -->
-  <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
-  <!-- <meta name="msapplication-TileImage" content="./lib/assets/favicon/ms-icon-144x144.png"> -->
- 
-  <meta name="theme-color" content="#ffffff">
-  <!-- Vendors styles-->
-  <link rel="stylesheet" href="./lib/vendors/simplebar/css/simplebar.css">
-  <link rel="stylesheet" href="./lib/css/vendors/simplebar.css">
-  <!-- Main styles for this application-->
-  <link href="./lib/css/style.css" rel="stylesheet">
-  <!-- We use those styles to show code examples, you should remove them in your application.-->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css"> -->
-  <!-- <link href="lib/css/examples.css" rel="stylesheet"> -->
+    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+    <!-- <meta name="msapplication-TileImage" content="./lib/assets/favicon/ms-icon-144x144.png"> -->
 
-  <!-- <script>
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="./lib/vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="./lib/css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="./lib/css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css"> -->
+    <!-- <link href="lib/css/examples.css" rel="stylesheet"> -->
+
+    <!-- <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -59,20 +59,20 @@ if (!isset($_SESSION['upkey'])) {
     // Bootstrap ID
     gtag('config', 'UA-118965717-5');
   </script> -->
-  <!-- <link href="./lib/vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet"> -->
-</head>
+    <!-- <link href="./lib/vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet"> -->
+  </head>
 
-<body onload="theContent('dashboard')">
+  <body onload="theContent('dashboard')">
 
-  <?php
-  include "./pages/components/sidebar.php"
-  ?>
+    <?php
+    include "./pages/components/sidebar.php"
+    ?>
 
-  <div class="wrapper d-flex flex-column min-vh-100 bg-light">
-    <?php include "./pages/components/header.php" ?>
-    <div class="embed-responsive" id="content-index" style="padding: 1rem">
-    </div>
-    <!-- <div class="body flex-grow-1 px-3">
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+      <?php include "./pages/components/header.php" ?>
+      <div class="embed-responsive" id="content-index" style="padding: 1rem">
+      </div>
+      <!-- <div class="body flex-grow-1 px-3">
       <div class="container-lg">
         <div class="row">
           <div class="col-sm-6 col-lg-3">
@@ -824,24 +824,27 @@ if (!isset($_SESSION['upkey'])) {
 
       </div>
     </div> -->
-    <footer class="footer">
-      <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
-      <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
-    </footer>
-  </div>
-  <!-- CoreUI and necessary plugins-->
-  <script src="./lib/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-  <script src="./lib/vendors/simplebar/js/simplebar.min.js"></script>
-  <!-- Plugins and scripts required by this view-->
-  <!-- <script src="./lib/vendors/chart.js/js/chart.min.js"></script> -->
-  <!-- <script src="./lib/vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
+      <footer class="footer">
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
+      </footer>
+    </div>
+    <script src="./lib/jquery/jquery-3.4.1.min.js">
+      // $('[data-coreui-toggle="tooltip"]').tooltip()
+    </script>
+    <!-- CoreUI and necessary plugins-->
+    <script src="./lib/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="./lib/vendors/simplebar/js/simplebar.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <!-- <script src="./lib/vendors/chart.js/js/chart.min.js"></script> -->
+    <!-- <script src="./lib/vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
   <script src="./lib/vendors/@coreui/utils/js/coreui-utils.js"></script> -->
-  <!-- <script src="./lib/js/main.js"></script> -->
-  <script src="./lib/js/iframe.js"></script>
+    <!-- <script src="./lib/js/main.js"></script> -->
+    <script src="./lib/js/iframe.js"></script>
 
-</body>
+  </body>
 
-</html>
+  </html>
 <?php
 }
 ?>
