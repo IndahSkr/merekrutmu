@@ -9,13 +9,49 @@
   </div>
   <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
     <li class="nav-item">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="#" onclick="theContent('dashboard')">
         <svg class="nav-icon">
           <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
         </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span>
       </a>
     </li>
-    <li class="nav-title">Theme</li>
+    <li class="nav-title">
+      MENU
+    </li>
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
+        <svg class="nav-icon">
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+        </svg> Administrator
+      </a>
+      <ul class="nav-group-items">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="theContent('mnjMenu')"><span class="nav-icon"></span> Menu Manajemen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="theContent('mnjUser')"><span class="nav-icon"></span> User Manajemen</a></li>
+      </ul>
+    </li>
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
+        <svg class="nav-icon">
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+        </svg> Petugas
+      </a>
+      <ul class="nav-group-items">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="theContent('loker')"><span class="nav-icon"></span> List Formasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="theContent('masterUjian')"><span class="nav-icon"></span> Master Ujian</a></li>
+      </ul>
+    </li>
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
+        <svg class="nav-icon">
+          <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-book"></use>
+        </svg> Penguji
+      </a>
+      <ul class="nav-group-items">
+        <li class="nav-item"><a class="nav-link" href="#"><span class="nav-icon"></span> List Formasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><span class="nav-icon"></span> Master Ujian</a></li>
+      </ul>
+    </li>
+    <!-- <li class="nav-title">Theme</li>
     <li class="nav-item">
       <a class="nav-link" href="colors.html">
         <svg class="nav-icon">
@@ -55,7 +91,8 @@
         <li class="nav-item"><a class="nav-link" href="base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
       </ul>
     </li>
-    <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+    <li class="nav-group">
+      <a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
           <use xlink:href="./lib/vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
         </svg> Buttons</a>
@@ -174,7 +211,7 @@
         </svg> Try CoreUI
         <div class="fw-semibold">PRO</div>
       </a>
-    </li>
+    </li> -->
   </ul>
   <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
 </div>
