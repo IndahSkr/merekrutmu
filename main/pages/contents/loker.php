@@ -1,4 +1,18 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/vendors/icons/ti-icons/css/themify-icons.css" />
+  <style>
+
+    td {
+      white-space: normal !important;
+    }
+  </style>
+</head>
+<body>
+  <?php
 session_start();
 if (!isset($_SESSION['upkey'])) {
   header("location:../user/login.php");
@@ -30,11 +44,11 @@ if (!isset($_SESSION['upkey'])) {
         <div class="col-12 col-xl-6 mb-12 mb-xl-12">
           <h3 class="font-weight-bold">List Loker</h3>
         </div>
-        <div class="col-12 col-xl-6 mb-12 mb-xl-12 text-right" style="padding-right: 2rem">
+        <!-- <div class="col-12 col-xl-6 mb-12 mb-xl-12 text-right" style="padding-right: 2rem">
           <button type="button" class="btn btn-inverse-success btn-icon" data-toggle="modal" data-target="#modalILoker">
             <i class="ti-plus"></i>
           </button>
-        </div>
+        </div> -->
         <div class="col-lg-12 grid-margin stretch-card">
           <div class="card">
             <!-- /.card-header -->
@@ -58,12 +72,12 @@ if (!isset($_SESSION['upkey'])) {
                     echo "<tr style='line-height: 1.5rem;'>";
                     echo "<td>".$no."</td>";
                     echo "<td>".$rslloker['kuota']."</td>";
-                    echo "<td>".$rslloker['idformasi']."</td>";
+                    echo "<td>".$rslloker['formasi']."</td>";
                     echo "<td>".$rslloker['tglbuka']."/".$rslloker['tgltutup']."</td>";
                     echo "<td>".$rslloker['usia']."</td>";
-                    echo "<td>".$rslloker['idpendidikan']."</td>";
+                    echo "<td>".$rslloker['pendidikan']."</td>";
                     echo "<td>
-                            <button type='button' onclick='dtLoker(".$rslloker['idloker'].")' class='btn btn-outline-secondary btn-icon d-flex justify-content-center align-items-center' data-toggle='modal' data-target='#modalDetailLoker'>
+                            <button type='button' onclick='dtLoker(".$rslloker['idloker'].")' class='btn btn-outline-secondary btn-icon d-flex justify-content-center align-items-center' data-coreui-toggle='modal' data-coreui-target='#modalDetailLoker' >
                               <i class='ti-eye'></i>
                             </button>
                           </td>";
@@ -86,3 +100,6 @@ if (!isset($_SESSION['upkey'])) {
 <?php
 }
 ?>
+<script src="./lib/js/table.js"></script>
+</body>
+</html>

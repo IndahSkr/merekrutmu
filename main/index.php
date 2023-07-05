@@ -25,6 +25,7 @@ if (!isset($_SESSION['upkey'])) {
     <link rel="stylesheet" href="./lib/css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="./lib/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/vendors/@coreui/icons/ti-icons/css/themify-icons.css" />
 
     <link rel="stylesheet" href="./lib/vendors/datatables/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="./lib/vendors/datatables/datatables-responsive/css/responsive.bootstrap4.min.css">
@@ -44,13 +45,17 @@ if (!isset($_SESSION['upkey'])) {
       </div>
    
       <footer class="footer">
-        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
-        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
+        <!-- <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div> -->
       </footer>
+      <?php
+        include "./pages/components/modal.php"
+      ?>
     </div>
-    <script src="./lib/jquery/jquery-3.4.1.min.js">
-      // $('[data-coreui-toggle="tooltip"]').tooltip()
-    </script>
+
+    
+
+    <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
     <!-- CoreUI and necessary plugins-->
     <script src="./lib/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <script src="./lib/vendors/simplebar/js/simplebar.min.js"></script>
@@ -68,6 +73,8 @@ if (!isset($_SESSION['upkey'])) {
     <script src="./lib/vendors/lib/datatables/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="./lib/vendors/datatables/datatables-buttons/js/buttons.colVis.min.js"></script>
     <script src="./lib/js/iframe.js"></script>
+    <script src="./lib/js/table.js"></script>
+    <script src="./lib/js/details.js"></script>
 
   </body>
 

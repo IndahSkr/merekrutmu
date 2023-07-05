@@ -231,7 +231,7 @@ if ($kode == "login") {
                 );
             }
         } elseif ($kode == "selectLoker") {
-            $sql = "SELECT idloker, deskripsi, kuota, idformasi, tglbuka, tgltutup, usia, idpendidikan from tbloker";
+            $sql = "SELECT idloker, deskripsi, kuota, a.idformasi, formasi, tglbuka, tgltutup, usia, a.idpendidikan, pendidikan from tbloker a join tbformasi b on a.idformasi = b.idformasi join tbpendidikan c on a.idpendidikan = c.idpendidikan ";
             $query = $koneksi->prepare($sql);
             $query->execute();
             $result = $query->get_result();
@@ -243,10 +243,12 @@ if ($kode == "login") {
                         "deskripsi" => $row['deskripsi'],
                         "kuota" => $row['kuota'],
                         "idformasi" => $row['idformasi'],
+                        "formasi" => $row['formasi'],
                         "tglbuka" => $row['tglbuka'],
                         "tgltutup" => $row['tgltutup'],
                         "usia" => $row['usia'],
-                        "idpendidikan" => $row['idpendidikan']
+                        "idpendidikan" => $row['idpendidikan'],
+                        "pendidikan" => $row['pendidikan']
                     )
                     );
             }
