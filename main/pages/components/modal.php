@@ -1,53 +1,53 @@
 <?php
 // Berkas
-// $dtberkas = array(
-//   "key" => $upkey,
-//   "kode" => "selectBerkas"
-// );
+$dtberkas = array(
+  "key" => $upkey,
+  "kode" => "selectBerkas"
+);
 
-// $jsonBerkas = json_encode($dtberkas);
-// $sendBerkas = curlpost($url, $jsonBerkas);
-// $resultBerkas = json_decode($sendBerkas, TRUE);
+$jsonBerkas = json_encode($dtberkas);
+$sendBerkas = curlpost($url, $jsonBerkas);
+$resultBerkas = json_decode($sendBerkas, TRUE);
 
 // Formasi
-// $dtFormasi = array(
-//   "key" => $upkey,
-//   "kode" => "selectFormasi"
-// );
+$dtFormasi = array(
+  "key" => $upkey,
+  "kode" => "selectFormasi"
+);
 
-// $jsonFormasi = json_encode($dtFormasi);
-// $sendFormasi = curlpost($url, $jsonFormasi);
-// $resultFormasi = json_decode($sendFormasi, TRUE);
+$jsonFormasi = json_encode($dtFormasi);
+$sendFormasi = curlpost($url, $jsonFormasi);
+$resultFormasi = json_decode($sendFormasi, TRUE);
 
 // SyaratLain
-// $dtSyaratLain = array(
-//   "key" => $upkey,
-//   "kode" => "selectSyaratLain"
-// );
+$dtSyaratLain = array(
+  "key" => $upkey,
+  "kode" => "selectSyaratLain"
+);
 
-// $jsonSyaratLain = json_encode($dtSyaratLain);
-// $sendSyaratLain = curlpost($url, $jsonSyaratLain);
-// $resultSyaratLain = json_decode($sendSyaratLain, TRUE);
+$jsonSyaratLain = json_encode($dtSyaratLain);
+$sendSyaratLain = curlpost($url, $jsonSyaratLain);
+$resultSyaratLain = json_decode($sendSyaratLain, TRUE);
 
 // Pendidikan
-// $dtPendidikan = array(
-//   "key" => $upkey,
-//   "kode" => "selectPendidikan"
-// );
+$dtPendidikan = array(
+  "key" => $upkey,
+  "kode" => "selectPendidikan"
+);
 
-// $jsonPendidikan = json_encode($dtPendidikan);
-// $sendPendidikan = curlpost($url, $jsonPendidikan);
-// $resultPendidikan = json_decode($sendPendidikan, TRUE);
+$jsonPendidikan = json_encode($dtPendidikan);
+$sendPendidikan = curlpost($url, $jsonPendidikan);
+$resultPendidikan = json_decode($sendPendidikan, TRUE);
 
 // Jenis Kelamin
-// $dtJK = array(
-//   "key" => $upkey,
-//   "kode" => "selectJenisKelamin"
-// );
+$dtJK = array(
+  "key" => $upkey,
+  "kode" => "selectJenisKelamin"
+);
 
-// $jsonJK = json_encode($dtJK);
-// $sendJK = curlpost($url, $jsonJK);
-// $resultJK = json_decode($sendJK, TRUE);
+$jsonJK = json_encode($dtJK);
+$sendJK = curlpost($url, $jsonJK);
+$resultJK = json_decode($sendJK, TRUE);
 ?>
 <!-- <div>
   <h1>Indah</h1>
@@ -71,7 +71,7 @@
                   <div class="col-md-6 col-sm-12" style="padding-top: 10px">
                     <h6 class="font-weight-bold">Tanggal Buka</h6>
                     <div class="form-group" style="margin-bottom: 0">
-                      <div class="input-group  date">
+                      <div class="input-group date">
                         <input type="text" class="form-control form-control-sm" id="dtglbuka" name="dtglbuka" required disabled />
                         <div class="input-group-append">
                           <button class="btn btn-sm btn-inverse-info" type="button"><i class="icon-clipboard"></i></button>
