@@ -48,7 +48,7 @@ if (!isset($_SESSION['upkey'])) {
           <button type="button" class="btn btn-outline-success btn-icon" data-coreui-toggle="modal" data-coreui-target="#modalILoker">
             <i class="ti-plus"></i>
           </button>
-          <button type="button" class="btn btn-primary"  data-coreui-toggle='modal' data-coreui-target='#modalDetailLoker'>
+          <button type="button" class="btn btn-primary"  data-coreui-toggle='modal' data-coreui-target='#modalLLoker'>
             Launch static backdrop modal
           </button>
           <button type='button' onclick='dtLoker("1")' class='btn btn-outline-secondary btn-icon d-flex justify-content-center align-items-center' data-coreui-toggle='modal' data-coreui-target='#modalDetailLoker' >
