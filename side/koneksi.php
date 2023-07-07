@@ -5,7 +5,7 @@ $dbhost = "localhost";
 $dbuname = "root";
 // $dbpw = "indahsirs477";
 $dbpw = "";
-$dbname = "new_recruit";
+$dbname = "new_recruit2";
 // $dbname = "recruitmu";
 
 $koneksi = mysqli_connect($dbhost, $dbuname, $dbpw, $dbname);
