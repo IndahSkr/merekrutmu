@@ -25,7 +25,16 @@ if (!isset($_SESSION['upkey'])) {
     <link rel="stylesheet" href="./lib/css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="./lib/css/style.css" rel="stylesheet">
+
+    <!-- inject: themify -->
     <link rel="stylesheet" href="./lib/vendors/@coreui/icons/ti-icons/css/themify-icons.css" />
+
+    <!-- inject: select2 -->
+    <link rel="stylesheet" href="./lib/vendors/select2/select2.min.css">
+
+    <!-- inject: sweetalert -->
+    <link rel="stylesheet" href="./lib/vendors/sweetalert/sweetalert2.css">
+    <script src="./lib/vendors/sweetalert/sweetalert2.js"></script>
 
     <link rel="stylesheet" href="./lib/vendors/datatables/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="./lib/vendors/datatables/datatables-responsive/css/responsive.bootstrap4.min.css">
@@ -59,6 +68,16 @@ if (!isset($_SESSION['upkey'])) {
     <!-- CoreUI and necessary plugins-->
     <script src="./lib/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <script src="./lib/vendors/simplebar/js/simplebar.min.js"></script>
+
+    <script type="text/javascript">
+      function sess(){
+        return "<?php echo $upkey ?>"
+      }
+    </script>
+
+    <!-- inject select2 -->
+    <script src="./lib/vendors/select2/select2.min.js"></script>
+    <script src="./lib/js/select2.js"></script>
     <!-- Table -->
     <script src="./lib/vendors/datatables/datatables/jquery.dataTables.min.js"></script>
     <script src="./lib/vendors/datatables/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -75,6 +94,7 @@ if (!isset($_SESSION['upkey'])) {
     <script src="./lib/js/iframe.js"></script>
     <script src="./lib/js/table.js"></script>
     <script src="./lib/js/details.js"></script>
+    <script src="./lib/js/modal.js"></script>
 
   </body>
 

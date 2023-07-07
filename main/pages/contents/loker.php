@@ -44,11 +44,17 @@ if (!isset($_SESSION['upkey'])) {
         <div class="col-12 col-xl-6 mb-12 mb-xl-12">
           <h3 class="font-weight-bold">List Loker</h3>
         </div>
-        <!-- <div class="col-12 col-xl-6 mb-12 mb-xl-12 text-right" style="padding-right: 2rem">
-          <button type="button" class="btn btn-inverse-success btn-icon" data-toggle="modal" data-target="#modalILoker">
+        <div class="col-12 col-xl-6 mb-12 mb-xl-12 text-end" style="padding-right: 2rem">
+          <button type="button" class="btn btn-outline-success btn-icon" data-coreui-toggle="modal" data-coreui-target="#modalILoker">
             <i class="ti-plus"></i>
           </button>
-        </div> -->
+          <button type="button" class="btn btn-primary"  data-coreui-toggle='modal' data-coreui-target='#modalDetailLoker'>
+            Launch static backdrop modal
+          </button>
+          <button type='button' onclick='dtLoker("1")' class='btn btn-outline-secondary btn-icon d-flex justify-content-center align-items-center' data-coreui-toggle='modal' data-coreui-target='#modalDetailLoker' >
+            <i class='ti-eye'></i>
+          </button>
+        </div>
         <div class="col-lg-12 grid-margin stretch-card">
           <div class="card">
             <!-- /.card-header -->
@@ -98,7 +104,9 @@ if (!isset($_SESSION['upkey'])) {
   </div>
 </div>
 <?php
+ include "../components/modal.php";
 }
+
 ?>
 <script src="./lib/js/table.js"></script>
 </body>
