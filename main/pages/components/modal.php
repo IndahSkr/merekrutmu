@@ -248,7 +248,8 @@ $resultJK = json_decode($sendJK, TRUE);
                     <h6 class="font-weight-bold">Tanggal Buka</h6>
                     <div class="form-group" style="margin-bottom: 0">
                       <div class="input-group date">
-                        <input type="text" class="form-control form-control-sm" id="ttglbuka" name="ttglbuka" required />
+                        <!-- <div data-coreui-locale="en-US" data-coreui-timepicker="true" data-coreui-toggle="date-picker"></div></div> -->
+                        <input type="text" class="form-control form-control-sm" data-coreui-timepicker="true" data-coreui-toggle="date-picker" id="ttglbuka" name="ttglbuka" required />
                         <span class="input-group-text">
                           <i class='ti-calendar'></i>
                         </span>
@@ -381,6 +382,25 @@ $resultJK = json_decode($sendJK, TRUE);
                       }
                       ?>
                     </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12" style="padding-top: 10px">
+                <div style="border: 1px black solid; padding: 10px; border-radius: 10px; margin-bottom: 10px">
+                  <h6 class="font-weight-bold">Syarat</h6>
+                  <div class="form-group">
+                    <!-- <select name="" id="" class="form-multi-select" multiple="" data-coreui-search="true" style="width:100%;">
+                      <option value="1">Satu</option>
+                      <option value="2">Dua</option>
+                    </select> -->
+                    <select class="form-multi-select" id="edit_properties" name="multi-select-edit_properties" multiple="" data-coreui-search="true" tabindex="-1" style="display: none;">
+                      <option value="1" selected="selected">consequatur</option>
+                      <option value="2">dolore</option>
+                      <option value="3">ab</option>
+                      <option value="4">eum</option>
+                      <option value="5">maxime</option>
+                    </select>
+
                   </div>
 
                 </div>

@@ -32,6 +32,9 @@ if (!isset($_SESSION['upkey'])) {
     <!-- inject: select2 -->
     <link rel="stylesheet" href="./lib/vendors/select2/select2.min.css">
 
+    <!-- Datetimepicker -->
+    <link rel="stylesheet" href="./lib/vendors/datetimepicker/css/bootstrap-datetimepicker.css">
+
     <!-- inject: sweetalert -->
     <link rel="stylesheet" href="./lib/vendors/sweetalert/sweetalert2.css">
     <script src="./lib/vendors/sweetalert/sweetalert2.js"></script>
@@ -78,6 +81,11 @@ if (!isset($_SESSION['upkey'])) {
     <!-- inject select2 -->
     <script src="./lib/vendors/select2/select2.min.js"></script>
     <script src="./lib/js/select2.js"></script>
+
+    <!-- datetimepicker -->
+    <script src="./lib/vendors/moment/moment.min.js"></script>
+    <script src="./lib/vendors/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
     <!-- Table -->
     <script src="./lib/vendors/datatables/datatables/jquery.dataTables.min.js"></script>
     <script src="./lib/vendors/datatables/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -95,6 +103,7 @@ if (!isset($_SESSION['upkey'])) {
     <script src="./lib/js/table.js"></script>
     <script src="./lib/js/details.js"></script>
     <script src="./lib/js/modal.js"></script>
+    <script src="./lib/js/datepicker.js"></script>
 
   </body>
 
